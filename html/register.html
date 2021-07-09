@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Registration Form</title>
+      <link rel="shortcut icon" type="image" href="../images/edit1.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="../js/valid.js"></script>
+      <link rel="stylesheet" href="../css/style.css">
+   </head>
+   <body>
+      <div class="header">
+         <h1>Welcome to Nanji Rice Shop</h1>
+         <p>Register Form</p>
+      </div>
+      <div class="navbar">
+         <a href="/ShuSeeYong/project/php/user/loginus.php" class="right">Login</a>
+         <a href="../index.html" class="left">Home</a>
+      </div>
+      <div class="main">
+         <center><img src="../images/edit1.png"></center>
+         <div class="container">
+            <form name="registerForm" action="../php/user/register.php" onsubmit="return validateRegForm()" method="post">
+               <div class="row">
+                  <div class="col-25">
+                     <i class="fa fa-user icon"></i>
+                     <label for="fname"><b>Name</b></label>
+                  </div>
+                  <div class="col-75">
+                     <input type="text" id="idname" name="name" placeholder="Your name..">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                     <i class="fa fa-envelope icon"></i>
+                     <label for="lemail"><b>Email</b></label>
+                  </div>
+                  <div class="col-75">
+                     <input type="text" id="idemail" name="email" placeholder="Your email..">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                     <i class="fa fa-phone icon"></i>
+                     <label for="lphone"><b>Phone Number</b></label>
+                  </div>
+                  <div class="col-75">
+                     <input type="tel" id="idphone" name="phone" placeholder="Your phone number..">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                     <i class="fa fa-key icon"></i>
+                     <label for="lpassword"><b>Password</b></label>
+                  </div>
+                  <div class="col-75">
+                     <input type="password" id="idpass" name="passworda" placeholder="Your password..">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                     <i class="fa fa-key icon"></i>
+                     <label for="lpassword"><b>Comfirm Password</b></label>
+                  </div>
+                  <div class="col-75">
+                     <input type="password" id="idpassb" name="passwordb" placeholder="Your comfirm password..">
+                  </div>
+               </div>
+               <div class="row">
+                  <div><input type="submit" value="Submit"></div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="footer">
+         <p>copyright <span>&#169;</span> 2021 Seeyong</p>
+      </div>
+   </body>
+</html>
